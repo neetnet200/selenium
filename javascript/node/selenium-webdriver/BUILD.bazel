@@ -91,6 +91,7 @@ jasmine_node_test(
         "//javascript/node/selenium-webdriver/lib/atoms:mutation-listener",
         "@npm//jasmine",
     ],
+    jasmine_entry_point = {"@npm//:node_modules/@bazel/jasmine": "jasmine_runner.js"}
 )
 
 # npm_package does not pick up filegroup sources.
